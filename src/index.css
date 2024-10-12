@@ -1,0 +1,70 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.bg-burkina-red {
+  background-color: #EF2B2D;
+}
+
+.bg-burkina-green {
+  background-color: #009E49;
+}
+
+.text-burkina-yellow {
+  color: #FCD116;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+#menu-button {
+  cursor: pointer;
+}
+
+#mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mobile-menu li {
+  margin-bottom: 10px;
+}
+
+#mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mobile-menu a:hover {
+  color: #ccc;
+}
+
+.show-mobile-menu {
+  display: block;
+}
